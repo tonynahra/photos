@@ -28,10 +28,10 @@ function App() {
 				<Route path="/react/" element={<Home />} />
 				<Route path="/react/books" element={<BookLayout />}>
 					<Route index element={<BookList />} />
-					<Route path=":id" element={<Book />} />
-					<Route path="new" element={<NewBook />} />
+					<Route path="/react/:id" element={<Book />} />
+					<Route path="/react/new" element={<NewBook />} />
 				</Route>
-				<Route path="*" element={<NotFound />} />
+				<Route path="/react/*" element={<NotFound />} />
 			</Routes>
 		</>
 	);
