@@ -28,7 +28,7 @@ function App() {
 				<Route path="/react/" element={<Home />} />
 				<Route path="/react/books" element={<BookLayout />}>
 					<Route index element={<BookList />} />
-					<Route path="/react/:id" element={<Book />} />
+					<Route path="/react/books:id" element={<Book />} />
 					<Route path="/react/new" element={<NewBook />} />
 				</Route>
 				<Route path="*" element={<NotFound />} />
