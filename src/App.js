@@ -14,19 +14,19 @@ function App() {
 			<nav>
 				<ul>
 					<li>
-						<Link to={"/"}>Home</Link>
+						<Link to={"/react/"}>Home</Link>
 					</li>
 					<li>
-						<Link to={"/books"}>Books</Link>
+						<Link to={"/react/books"}>Books</Link>
 					</li>
 					<li>
-						<Link to={"/books/new"}>New Book</Link>
+						<Link to={"/react/books/new"}>New Book</Link>
 					</li>
 				</ul>
 			</nav>
 			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/books" element={<BookLayout />}>
+				<Route path="/react/" element={<Home />} />
+				<Route path="/react/books" element={<BookLayout />}>
 					<Route index element={<BookList />} />
 					<Route path=":id" element={<Book />} />
 					<Route path="new" element={<NewBook />} />
