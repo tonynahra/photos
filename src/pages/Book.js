@@ -1,10 +1,14 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useOutletContext, useParams } from 'react-router-dom'
 
 const Book = () => {
 	const { id } = useParams();
+	const { hello } = useOutletContext();
 	return (
-		<div>Book with id of {id} </div>
+		<>
+			<div>Book with id of {id} </div>
+			shared data: {hello}
+		</>
 	)
 }
 
