@@ -31,7 +31,7 @@ function App() {
 					<Route path="/react/:id" element={<Book />} />
 					<Route path="/react/new" element={<NewBook />} />
 				</Route>
-				<Route path="/react/*" element={<NotFound />} />
+				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</>
 	);
