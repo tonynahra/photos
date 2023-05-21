@@ -1,8 +1,10 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 
 const Book = () => {
+	const { id } = useParams();
 	return (
-		<div>Book</div>
+		<div>Book with id of {id} </div>
 	)
 }
 
